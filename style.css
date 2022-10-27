@@ -80,6 +80,7 @@ img {
 .social_icons {
   display: flex;
   align-items: center;
-  gap: 20px;
-  margin: 12px 24px 0 24px;
+  list-style: none;
+  filter: grayscale(100%);
+  gap: 20px
 }
