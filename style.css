@@ -40,6 +40,7 @@ img {
 .logo {
   color: #6070ff;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .menu {
