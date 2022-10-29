@@ -77,17 +77,31 @@ img {
   margin: 12px 24px 0 24px;
 }
 
-.social_media {
-  color: #7f8cff;
-  margin: 12px 24px 0 24px;
+.social_media_about {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 24px;
+}
+
+.social_media_about a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .social_icons {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  padding: 0px;
   list-style: none;
-  filter: grayscale(100%);
-  gap: 20px;
+  gap: 30px;
+}
+
+.social_icons li i {
+  width: 24px;
+  height: 24px;
+  color: #505F79;
 }
 
 #social_icons {
@@ -102,19 +116,18 @@ img {
 }
 
 .works {
+  background: #E5E5E5;
   display: grid;
   grid-template-columns: auto;
-  row-gap: 100px;
-  margin-top: 42px;
-  margin-bottom: 114px;
+  align-items: center;
+  padding: 114px 24px;
+  gap: 88px;
 }
 
 .card {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  min-height: 90%;
   padding: 16px;
-  margin: 0 24px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -203,34 +216,30 @@ img {
 }
 
 .button-container {
-  margin-top: 12px;
-  height: 48px;
-}
-
-.btn {
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  height: 48px;
-  outline: none;
-  background-color: white;
-  color: #396df2;
+  border: 1px solid #6070FF;
+  background: #fff;
+  color: #396DF2;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  cursor: pointer;
+  letter-spacing: 0.03em;
+  border-radius: 8px;
   padding: 12px;
+  width: 162px;
 }
 
-.btn:hover {
+.button-container:hover {
   background: #6070ff;
   color: #fff;
   transition: all 0.5s ease-out;
 }
 
 .about {
-  min-height: 100vh;
-  background-color: #fff;
-  border-top-right-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 114px 24px;
+  gap: 24px;
 }
 
 .container {
@@ -242,14 +251,23 @@ img {
 .skills {
   display: flex;
   justify-content: space-between;
-  height: 72px;
   align-items: center;
-  margin-bottom: 12px;
-  padding: 0 40px;
+
 }
 
-.drop {
-  width: 14px;
+.skills h2 {
+  color: #000000;
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.skills img {
+  display: flex;
+  align-items: center;
+  width: 24px;
+  height: 24px;
 }
 
 .langList {
@@ -259,6 +277,7 @@ img {
 
 .langImg {
   width: 30vw;
+  /* height: px; */
 }
 
 .lang {
@@ -268,12 +287,13 @@ img {
   align-items: center;
   gap: 20px;
   margin-bottom: 12px;
+  border-radius: 8px;
 }
 
-.arrow {
+/* .arrow {
   width: 8px;
-}
+} */
 
-.skill-list {
-  padding: 0;
+.skill-list li {
+  list-style: none;
 }
