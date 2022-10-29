@@ -93,7 +93,6 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
   list-style: none;
   gap: 30px;
 }
@@ -101,7 +100,7 @@ img {
 .social_icons li i {
   width: 24px;
   height: 24px;
-  color: #505F79;
+  color: #505f79;
 }
 
 #social_icons {
@@ -116,7 +115,7 @@ img {
 }
 
 .works {
-  background: #E5E5E5;
+  background: #e5e5e5;
   display: grid;
   grid-template-columns: auto;
   align-items: center;
@@ -216,9 +215,9 @@ img {
 }
 
 .button-container {
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   background: #fff;
-  color: #396DF2;
+  color: #396df2;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -252,11 +251,10 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .skills h2 {
-  color: #000000;
+  color: #000;
   list-style-type: none;
   font-weight: 500;
   font-size: 20px;
@@ -277,7 +275,6 @@ img {
 
 .langImg {
   width: 30vw;
-  /* height: px; */
 }
 
 .lang {
