@@ -291,7 +291,7 @@ img {
   list-style: none;
 }
 
-.contact-me{
+.contact-me {
   background-color: #6070ff;
   background-image: url('images/contact-img-bg.png');
   background-repeat: no-repeat;
@@ -319,7 +319,7 @@ img {
   color: #ebebffff;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -347,7 +347,7 @@ form textarea {
   padding: 15px 38px 15px 16px;
 }
 
-form button{
+form button {
   width: 140px;
   height: 48px;
   color: #6070ff;
@@ -361,7 +361,7 @@ form button{
 }
 
 .contact-hr {
-  background: #0D151E;
+  background: #0d151e;
   border-radius: 10px;
   width: 134px;
   height: 5px;
