@@ -290,3 +290,79 @@ img {
 .skill-list li {
   list-style: none;
 }
+
+.contact-me{
+  background-color: #6070ff;
+  background-image: url('images/contact-img-bg.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
+  border-top-left-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  padding: 114px 24px 8px 24px;
+}
+
+.contact-me h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+}
+
+.contact-me p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebffff;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  color: #172b4d;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  padding: 15px 38px 15px 16px;
+}
+
+form textarea {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+  padding: 15px 38px 15px 16px;
+}
+
+form button{
+  width: 140px;
+  height: 48px;
+  color: #6070ff;
+  background: #fff;
+  border: none;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  border-radius: 8px;
+}
+
+.contact-hr {
+  background: #0D151E;
+  border-radius: 10px;
+  width: 134px;
+  height: 5px;
+}
