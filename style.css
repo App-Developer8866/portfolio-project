@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  background: #e5e5e5;
 }
 
 h3 {
@@ -34,11 +35,15 @@ img {
   width: 100%;
 }
 
+.top {
+  background-color: #fff;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 14px 24px;
+  padding: 14px 24px;
 }
 
 .logo {
@@ -50,6 +55,10 @@ img {
 .menu {
   width: 24px;
   height: 24px;
+}
+
+.nav-menue {
+  display: none;
 }
 
 .section {
@@ -94,7 +103,7 @@ img {
   flex-direction: row;
   align-items: center;
   list-style: none;
-  gap: 30px;
+  gap: 15px;
 }
 
 .social_icons li i {
@@ -115,7 +124,6 @@ img {
 }
 
 .works {
-  background: #e5e5e5;
   display: grid;
   grid-template-columns: auto;
   align-items: center;
@@ -283,8 +291,20 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 114px 24px;
   gap: 24px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 114px 24px;
+  margin-bottom: 50px;
+  gap: 24px;
+  background-color: #fff;
+  position: absolute;
 }
 
 .container {
@@ -345,6 +365,8 @@ img {
   text-align: center;
   gap: 20px;
   padding: 114px 24px 8px 24px;
+  z-index: 1;
+  margin-top: 1000px;
 }
 
 .contact-me h2 {
@@ -407,4 +429,183 @@ form button {
   border-radius: 10px;
   width: 134px;
   height: 5px;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 24px;
+  }
+
+  .top {
+    border-bottom-left-radius: 100px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 80px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .nav-menue {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .section {
+    background-position: left top;
+    background-size: cover;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 76px;
+    width: 100%;
+    border-bottom-left-radius: 50px;
+  }
+
+  .title {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .info {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .works {
+    padding: 80px;
+    gap: 142px;
+  }
+
+  .card1 {
+    display: flex;
+    flex-direction: row;
+    gap: 46px;
+  }
+
+  .card2 {
+    padding: 24px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 46px;
+  }
+
+  .card3 {
+    border-radius: 24px;
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 46px;
+  }
+
+  .card4 {
+    border-radius: 24px;
+    padding: 24px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 46px;
+  }
+
+  .img-container {
+    height: 400px;
+  }
+
+  .button-container {
+    padding: 12px;
+    width: 150px;
+    height: 48px;
+  }
+
+  .button-container3 {
+    background: #4053fc;
+    box-shadow: 1px 8px 16px rgba(64, 83, 252, 0.24);
+    color: #fff;
+    padding: 12px;
+    width: 124px;
+    height: 48px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-top-right-radius: 100px;
+    width: 96%;
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: row;
+    border-top-right-radius: 100px;
+  }
+
+  .container-about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 60%;
+  }
+
+  .social_media_about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 80px;
+  }
+
+  .social_icons {
+    padding: 1px;
+  }
+
+  .skill-list {
+    width: 40%;
+  }
+
+  .langList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 142px;
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .contact-me {
+    padding: 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    z-index: 1;
+    margin-top: 750px;
+  }
+
+  form {
+    align-items: center;
+    gap: 27px;
+    width: 447px;
+    height: 395px;
+  }
+
+  form input {
+    border-radius: 2px;
+    width: 100%;
+  }
+
+  form textarea {
+    border-radius: 2px;
+    width: 100%;
+  }
+
+  .contact-hr {
+    display: none;
+  }
 }

@@ -16,6 +16,7 @@
   </head>
   <body>
 
+    <div class="top">
     <!-- Header -->
     <header class="header">
       <nav>
@@ -23,6 +24,11 @@
       </nav>
       <nav class="menu">
         <a href="#"><img src="images/menu.png" alt="menu" /></a>
+      </nav>
+      <nav class="nav-menue">
+        <a href="#">Portfolio</a>
+        <a href="#">Abour</a>
+        <a href="#">Contact</a>
       </nav>
     </header>
 
@@ -42,19 +48,25 @@
       <div class="social_media_about">
         <a href="#">LET’S CONNECT</a>
       <ul class="social_icons">
-        <li><a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-github fa-2x"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-facebook fa-1x"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter fa-1x"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-github fa-1x"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram fa-1x"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-linkedin fa-1x"></i></a></li>
       </ul>
     </div>
     </section>
+    </div>
 
     <!--Works Section  -->
     <section class="works">
       <div class="card1">
-        
+        <a href="#">
+          <picture>
+          <source media="(min-width: 768px )" srcset="images/web-img1.png">
+          <source media="(max-width: 768px )" srcset="images/portfolio-img.png">
+            <img class="img-container" src="" alt="project image" />
+          </picture></a>
         <div class="content">
           <div class="project_name">
             <h3 id="title">Tonic</h3>
@@ -85,7 +97,12 @@
         </div>
       </div>
       <div class="card2">
-        
+        <a href="#">
+          <picture>
+            <source media="(min-width: 768px )" srcset="images/portfolio-img4.png">
+            <source media="(max-width: 768px )" srcset="images/portfolio-img2.png">
+              <img class="img-container" src="" alt="project image" />
+            </picture></a>
         <div class="content">
         <div class="project_name">
           <h3 id="title">Multi-Post Stories</h3>
@@ -116,7 +133,12 @@
       </div>     
       </div>
       <div class="card3">
-        
+        <a href="#">
+          <picture>
+          <source media="(min-width: 768px )" srcset="images/portfolio-img.png">
+          <source media="(max-width: 768px )" srcset="images/portfolio-img3.png">
+            <img class="img-container" src="" alt="project image" />
+          </picture></a>
         <div class="content">
         <div class="project_name">
           <h3 id="title">Multi-Post Stories</h3>
@@ -147,7 +169,12 @@
       </div>
       </div>
       <div class="card4">
-        
+        <a href="#">
+          <picture>
+            <source media="(min-width: 768px )" srcset="images/portfolio-img2.png">
+            <source media="(max-width: 768px )" srcset="images/portfolio-img4.png">
+              <img class="img-container" src="" alt="project image" />
+            </picture></a>
         <div class="content">
         <div class="project_name">
           <h3 id="title">Multi-Post Stories</h3>
@@ -181,6 +208,7 @@
 
     <!-- About Section -->
     <section class="about">
+      <div class="container2">
       <div class="container-about">
         <div class="title">
           <h1>About Myself</h1>
@@ -196,11 +224,11 @@
         <div class="social_media_about">
           <a href="#">LET’S CONNECT</a>
           <ul class="social_icons">
-          <li><a href="#"><i class="fa-brands fa-github fa-2x"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-linkedin-in fa-2x"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-angellist fa-2x"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-m fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-github fa-1x"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-linkedin-in fa-1x"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-angellist fa-1x"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter fa-1x"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-m fa-1x"></i></a></li>
         </ul>
         <button class="button-container">
           Get my resume
@@ -214,13 +242,25 @@
           </li>
           <ul class="langList">
             <li class="lang">
-                <img src="images/js.png" alt="js" />
+              <picture>
+                <source media="(max-width: 768px)" srcset="images/js.png">
+                <source media="(min-width: 768px)" srcset="images/js2.png">
+                <img src="" alt="js" />
+              </picture>
             </li>
             <li class="lang">
-                <img src="images//html.png" alt="html" />
+              <picture>
+              <source media="(max-width: 768px)" srcset="images/html.png">
+              <source media="(min-width: 768px)" srcset="images/html2.png">
+              <img src="" alt="html" />
+            </picture>
             </li>
             <li class="lang">
-                <img src="images/css.png" alt="css" />
+            <picture>
+              <source media="(max-width: 768px)" srcset="images/css.png">
+              <source media="(min-width: 768px)" srcset="images/css2.png">
+              <img src="" alt="css" />
+            </picture>
             </li>
           </ul>
           <li class="skills">
@@ -234,8 +274,8 @@
           </li>
           <hr />
         </ul>
-    </section>
-
+      </div>
+    
     <!-- Contact Form  -->
     <section class="contact-me">
         <h2>Contact me</h2>
@@ -251,5 +291,6 @@
     </form>
     <hr class="contact-hr">
   </section>
+</section>
   </body>
 </html>
