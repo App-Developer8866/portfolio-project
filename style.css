@@ -517,6 +517,10 @@ form button {
     margin-left: 80px;
   }
 
+  .social_icons {
+    padding: 0px;
+  }
+
   .social_media_about button {
     width: 162px;
     height: 48px;
