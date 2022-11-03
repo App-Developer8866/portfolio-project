@@ -430,7 +430,7 @@ form button {
     justify-content: center;
     margin: 50px 8px 76px 27px;
     width: 98%;
-  }  
+  }
 
   .title {
     margin-left: 100px;
@@ -440,10 +440,6 @@ form button {
   .info {
     margin-left: 100px;
     margin-right: 100px;
-  }
-
-  .social_icons {
-    padding: 0px 0px;
   }
 
   .works {
@@ -491,7 +487,7 @@ form button {
     width: 124px;
     height: 48px;
   }
-  
+
   .button-container3 {
     background: #4053fc;
     box-shadow: 0px 8px 16px 0px rgba(64, 83, 252, 0.24);
@@ -524,12 +520,6 @@ form button {
   .social_media_about button {
     width: 162px;
     height: 48px;
-  }
-
-  .skill-list {
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
   }
 
   .langList {
@@ -568,5 +558,4 @@ form button {
   .contact-hr {
     display: none;
   }
-
 }
