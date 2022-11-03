@@ -432,12 +432,14 @@ form button {
 }
 
 @media (min-width: 768px) {
-  body{
-    padding: 24px
+  body {
+    padding: 24px;
   }
+
   .top {
     border-bottom-left-radius: 100px;
   }
+  
   .header {
     display: flex;
     justify-content: space-between;
