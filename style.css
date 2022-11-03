@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  background: #e5e5e5;
 }
 
 h3 {
@@ -34,11 +35,15 @@ img {
   width: 100%;
 }
 
+.top {
+  background-color: #fff;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 14px 24px;
+  padding: 14px 24px;
 }
 
 .logo {
@@ -50,6 +55,10 @@ img {
 .menu {
   width: 24px;
   height: 24px;
+}
+
+.nav-menue {
+  display: none;
 }
 
 .section {
@@ -94,7 +103,7 @@ img {
   flex-direction: row;
   align-items: center;
   list-style: none;
-  gap: 30px;
+  gap: 15px;
 }
 
 .social_icons li i {
@@ -115,7 +124,6 @@ img {
 }
 
 .works {
-  background: #e5e5e5;
   display: grid;
   grid-template-columns: auto;
   align-items: center;
@@ -283,8 +291,20 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 114px 24px;
   gap: 24px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 114px 24px;
+  margin-bottom: 50px;
+  gap: 24px;
+  background-color: #fff;
+  position: absolute;
 }
 
 .container {
@@ -345,6 +365,8 @@ img {
   text-align: center;
   gap: 20px;
   padding: 114px 24px 8px 24px;
+  z-index: 1;
+  margin-top: 1000px;
 }
 
 .contact-me h2 {
@@ -410,26 +432,37 @@ form button {
 }
 
 @media (min-width: 768px) {
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  body{
+    padding: 24px
   }
-
+  .top {
+    border-bottom-left-radius: 100px;
+  }
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 14px 24px;
+    padding: 14px 80px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .nav-menue {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
   }
 
   .section {
     background-position: left top;
     background-size: cover;
     justify-content: center;
-    margin: 50px 8px 76px 27px;
-    width: 98%;
+    margin-top: 50px;
+    margin-bottom: 76px;
+    width: 100%;
+    border-bottom-left-radius: 50px;
   }
 
   .title {
@@ -443,7 +476,7 @@ form button {
   }
 
   .works {
-    padding: 114px 142px;
+    padding: 80px;
     gap: 142px;
   }
 
@@ -484,7 +517,7 @@ form button {
 
   .button-container {
     padding: 12px;
-    width: 124px;
+    width: 150px;
     height: 48px;
   }
 
@@ -499,9 +532,16 @@ form button {
 
   .about {
     display: flex;
-    flex-direction: row;
-    padding: 142px;
+    flex-direction: column;
     gap: 24px;
+    border-top-right-radius: 100px;
+    width: 96%;
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: row;
+    border-top-right-radius: 100px;
   }
 
   .container-about {
@@ -509,23 +549,29 @@ form button {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
+    width: 60%;
   }
 
   .social_media_about {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     margin-left: 80px;
   }
 
-  .social_media_about button {
-    width: 162px;
-    height: 48px;
+  .social_icons {
+    padding: 1px;
+  }
+  
+  .skill-list {
+    width: 40%;
   }
 
   .langList {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-right: 142px;
     padding: 12px;
     gap: 12px;
   }
@@ -536,6 +582,8 @@ form button {
     flex-direction: column;
     align-items: center;
     gap: 24px;
+    z-index: 1;
+    margin-top: 750px;
   }
 
   form {
