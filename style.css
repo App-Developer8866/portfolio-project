@@ -276,14 +276,20 @@ img {
 }
 
 .button-container:hover {
-  background: #6070ff;
+  background: #661d79;
+  box-shadow: 1px 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
+  border: none;
+  cursor: pointer;
   transition: all 0.5s ease-out;
 }
 
 .button-container3:hover {
-  background: #6070ff;
+  background: #661d79;
+  box-shadow: 1px 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
+  border: none;
+  cursor: pointer;
   transition: all 0.5s ease-out;
 }
 
@@ -457,6 +463,17 @@ form button {
     gap: 15px;
   }
 
+  .nav-menue a:hover {
+    background: #661d79;
+    box-shadow: 1px 8px 16px rgba(64, 83, 252, 0.24);
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+  }
+
   .section {
     background-position: left top;
     background-size: cover;
@@ -465,6 +482,46 @@ form button {
     margin-bottom: 76px;
     width: 100%;
     border-bottom-left-radius: 50px;
+  }
+
+  .section:hover {
+    box-shadow: 1px 8px 16px rgba(5, 10, 49, 0.24);
+    border-radius: 100px;
+    transition: all 0.5s ease-out;
+  }
+
+  .info p {
+    animation-duration: 5s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .title h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .title {
@@ -488,12 +545,32 @@ form button {
     gap: 46px;
   }
 
+  .card1:hover {
+    box-shadow: 1px 8px 16px rgba(5, 10, 49, 0.24);
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+  }
+
   .card2 {
     padding: 24px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     gap: 46px;
+  }
+
+  .card2:hover {
+    box-shadow: 1px 8px 16px rgba(5, 10, 49, 0.24);
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
   }
 
   .card3 {
@@ -504,6 +581,16 @@ form button {
     gap: 46px;
   }
 
+  .card3:hover {
+    box-shadow: 1px 8px 16px rgba(5, 10, 49, 0.24);
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+  }
+
   .card4 {
     border-radius: 24px;
     padding: 24px;
@@ -511,6 +598,16 @@ form button {
     flex-direction: row-reverse;
     justify-content: space-between;
     gap: 46px;
+  }
+
+  .card4:hover {
+    box-shadow: 1px 8px 16px rgba(5, 10, 49, 0.24);
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
   }
 
   .img-container {
@@ -563,6 +660,22 @@ form button {
 
   .social_icons {
     padding: 1px;
+  }
+
+  .social_icons i:hover {
+    box-shadow: 1px 8px 16px rgba(12, 16, 58, 0.24);
+    color: #661d79;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+  }
+
+  .lang img:hover {
+    box-shadow: 1px 8px 16px rgba(12, 16, 58, 0.24);
+    color: #661d79;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
   }
 
   .skill-list {
