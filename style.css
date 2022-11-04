@@ -562,7 +562,7 @@ form button {
     justify-content: space-between;
     gap: 46px;
   }
- 
+
   .card2:hover {
     box-shadow: 1px 8px 16px rgba(5, 10, 49, 0.24);
     color: #fff;
