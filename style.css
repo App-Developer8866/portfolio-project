@@ -491,8 +491,8 @@ form button {
   }
 
   .info p {
-      animation-duration: 5s;
-      animation-name: slidein;
+    animation-duration: 5s;
+    animation-name: slidein;
   }
 
   @keyframes slidein {
@@ -500,7 +500,7 @@ form button {
       margin-left: 100%;
       width: 300%;
     }
-  
+
     to {
       margin-left: 0%;
       width: 100%;
@@ -508,8 +508,8 @@ form button {
   }
 
   .title h1 {
-      animation-duration: 3s;
-      animation-name: slidein;
+    animation-duration: 3s;
+    animation-name: slidein;
   }
 
   @keyframes slidein {
@@ -517,7 +517,7 @@ form button {
       margin-left: 100%;
       width: 300%;
     }
-  
+
     to {
       margin-left: 0%;
       width: 100%;
@@ -562,7 +562,7 @@ form button {
     justify-content: space-between;
     gap: 46px;
   }
-  
+ 
   .card2:hover {
     box-shadow: 1px 8px 16px rgba(5, 10, 49, 0.24);
     color: #fff;
