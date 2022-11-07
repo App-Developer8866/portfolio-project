@@ -1,16 +1,18 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# portfolio-mobile
+# portfolio-project
 
->Portfolio for mobile version
+>Portfolio for mobile version and desktop version
 
 
 ## Built With
 
 - HTML & CSS
 
+## Live Demo
 
+-Live demo link: (https://app-developer8866.github.io/)
 
 ## Getting Started
 
