@@ -372,7 +372,7 @@ img {
   gap: 20px;
   padding: 114px 24px 8px 24px;
   z-index: 1;
-  margin-top: 1000px;
+  margin-top: 1250px;
 }
 
 .contact-me h2 {
@@ -428,6 +428,15 @@ form button {
   font-size: 17px;
   line-height: 24px;
   border-radius: 8px;
+}
+
+form button:hover {
+  background: #661d79;
+  box-shadow: 1px 8px 16px rgba(64, 83, 252, 0.24);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
 }
 
 .contact-hr {
@@ -486,7 +495,7 @@ form button {
 
   .section:hover {
     box-shadow: 1px 8px 16px rgba(5, 10, 49, 0.24);
-    border-radius: 100px;
+    border-bottom-left-radius: 100px;
     transition: all 0.5s ease-out;
   }
 
@@ -509,18 +518,18 @@ form button {
 
   .title h1 {
     animation-duration: 3s;
-    animation-name: slidein;
+    animation-name: slidein1;
   }
 
-  @keyframes slidein {
+  @keyframes slidein1 {
     from {
-      margin-left: 100%;
-      width: 300%;
+      margin-right: 100%;
+      width: 100%;
     }
 
     to {
-      margin-left: 0%;
-      width: 100%;
+      margin-right: 0%;
+      width: 300%;
     }
   }
 
