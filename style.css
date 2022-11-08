@@ -499,7 +499,7 @@ form button:hover {
     transition: all 0.5s ease-out;
   }
 
-  .info p {
+  .section .info p {
     animation-duration: 5s;
     animation-name: slidein;
   }
