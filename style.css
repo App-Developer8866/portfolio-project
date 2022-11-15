@@ -82,6 +82,10 @@ img {
   z-index: 1;
 }
 
+.nav-menue2 {
+  display: none;
+}
+
 .nav-menue {
   position: fixed;
   display: flex;
@@ -518,25 +522,21 @@ form button:hover {
     display: none;
   }
 
-  .nav-menue {
+  .nav-menue2 {
     display: flex;
     flex-direction: row;
-    position: fixed;
-    z-index: -1;
     color: #396df2;
     gap: 15px;
-    right: 0;
   }
 
-  .nav-menue a:hover {
-    background: #661d79;
-    box-shadow: 1px 8px 16px rgba(64, 83, 252, 0.24);
-    color: #fff;
-    padding: 5px 10px;
+  .nav-menue2 a:hover {
+    color: #661d79;
+    padding: 2px;
     border: none;
-    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 600;
     cursor: pointer;
-    transition: all 0.5s ease-out;
+    transition: all 0.5s ease;
   }
 
   .section {
