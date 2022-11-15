@@ -22,13 +22,15 @@
       <nav>
         <a class="logo" href="#">MMR</a>
       </nav>
-      <nav class="menu">
-        <a href="#"><img src="images/menu.png" alt="menu-icon" /></a>
-      </nav>
       <nav class="nav-menue">
-        <a href="#">Portfolio</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#Portfolio">Portfolio</a>
+        <a href="#About">About</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+      <nav class="humburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </nav>
     </header>
 
@@ -59,7 +61,7 @@
     </div>
 
     <!--Works Section  -->
-    <section class="works">
+    <section id="Portfolio" class="works">
       <div class="card1">
         <a href="#">
           <picture>
@@ -91,7 +93,7 @@
             <li id="lang">css</li>
             <li id="lang">javascript</li>
           </ul>
-          <button class="button-container">
+          <button type="submit" class="button-container">
             See Project
           </button>
         </div>
@@ -127,7 +129,7 @@
           <li id="lang">css</li>
           <li id="lang">javascript</li>
         </ul>
-        <button class="button-container">
+        <button type="submit" class="button-container">
           See Project
         </button>
       </div>     
@@ -163,7 +165,7 @@
           <li id="lang">css</li>
           <li id="lang">javascript</li>
         </ul>
-        <button class="button-container3">
+        <button type="submit" class="button-container3">
           See Project
         </button>
       </div>
@@ -199,7 +201,7 @@
           <li id="lang">css</li>
           <li id="lang">javascript</li>
         </ul>
-        <button class="button-container">
+        <button type="submit" class="button-container">
           See Project
         </button>
       </div>
@@ -207,7 +209,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="about">
+    <section id="About" class="about">
       <div class="container2">
       <div class="container-about">
         <div class="title">
@@ -230,7 +232,7 @@
           <li><a href="#"><i class="fa-brands fa-twitter fa-1x"></i></a></li>
           <li><a href="#"><i class="fa-brands fa-m fa-1x"></i></a></li>
         </ul>
-        <button class="button-container">
+        <button type="submit" class="button-container">
           Get my resume
         </button>
         </div>
@@ -277,7 +279,7 @@
       </div>
     
     <!-- Contact Form  -->
-    <section class="contact-me">
+    <section id="Contact" class="contact-me">
         <h2>Contact me</h2>
         <p>
           If you have an application you are interested in developing, a feature that you need 
@@ -292,5 +294,6 @@
     <hr class="contact-hr">
   </section>
 </section>
+<script src="index.js"></script>
   </body>
 </html>
