@@ -1,7 +1,6 @@
-const body = document.querySelector('.works');
+/* eslint-disable no-unused-vars */
 const humburgerBtn = document.querySelector('.humburger');
 const navMenu = document.querySelector('.nav-menue');
-const section = document.createElement('section');
 const Modal = document.querySelector('.modal-container');
 const ModalTitle = document.querySelector('.modaltitle');
 const ModalTechnology = document.querySelector('.language_used_modal');
@@ -12,7 +11,6 @@ const ModalSeeSource = document.querySelector('.seesource');
 const Company = document.querySelector('.pop-company');
 const Role = document.querySelector('.pop-role');
 const Year = document.querySelector('.pop-year');
-
 
 humburgerBtn.addEventListener('click', () => {
   humburgerBtn.classList.toggle('active');
