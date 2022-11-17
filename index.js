@@ -138,3 +138,9 @@ const openPop = (id) => {
   ModalSeeSource.setAttribute('href', getDetail[0].linkToSource);
   Modal.style.display = 'block';
 };
+
+const CloseModal = () => {
+  Modal.style.display = 'none';
+  document.querySelector('main').style.display = 'block';
+  document.querySelector('header').style.display = 'flex';
+};
