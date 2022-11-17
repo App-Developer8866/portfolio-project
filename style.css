@@ -678,6 +678,15 @@ form button:hover {
     transition: all 0.5s ease-out;
   }
 
+  .description p {
+    height: 6rem;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+  }
+
   .section .info p {
     animation-duration: 5s;
     animation-name: slidein;
@@ -731,7 +740,6 @@ form button:hover {
     display: flex;
     flex-direction: row;
     gap: 46px;
-    transform: translate(-50% -50%);
   }
 
   #card1:hover {
@@ -802,15 +810,6 @@ form button:hover {
   .description {
     width: 100%;
     margin-top: 10px;
-  }
-  
-  .description p {
-    height: 6rem;
-    overflow: hidden;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #344563;
   }
 
   .img-container {
