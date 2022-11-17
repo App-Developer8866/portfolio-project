@@ -561,18 +561,24 @@ form button:hover {
 }
 
 .modalbox {
-  height: 100vh;
-  background: white;
+  background-color: white;
   padding: 24px;
+  border-radius: 16px;
   flex-direction: column;
   justify-content: space-between;
+  margin: 5% 5%;
 }
 
 .pop-top {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 24px 0;
+}
+
+.modal-button-div {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .modalbox button:hover {
@@ -580,15 +586,15 @@ form button:hover {
   color: white;
 }
 
-.modalbox p {
-  margin: 30px 0;
+.top-title {
+  display: flex;
+  justify-content: space-between;
 }
 
 .close-modal {
   cursor: pointer;
-  width: 20px;
-  margin-left: 83vw;
-  margin-bottom: 18px;
+  width: 15px;
+  height: 15px;
 }
 
 .language_used_modal {
@@ -930,21 +936,20 @@ form button:hover {
     justify-content: center;
   }
 
-  .close-modal {
+  /* .close-modal {
     cursor: pointer;
-    margin-bottom: -7vh;
-    margin-left: 73.5vw;
-  }
+    z-index: 3;
+  } */
 
   .language_used_modal {
     margin: 40px 0;
   }
 
-  .modal-button-div {
+  /* .modal-button-div {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-  }
+  } */
 
   .below-box {
     display: flex;
@@ -956,6 +961,7 @@ form button:hover {
 
   .pop-up-description {
     width: 70%;
+    padding: 30px 0;
   }
 
   .sec-box {
