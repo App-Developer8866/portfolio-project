@@ -1,6 +1,8 @@
+/* eslint-disable no-plusplus */
 /* eslint-disable no-unused-vars */
 const humburgerBtn = document.querySelector('.humburger');
 const navMenu = document.querySelector('.nav-menue');
+const Portfolio = document.querySelectorAll('.card');
 const Modal = document.querySelector('.modal-container');
 const ModalTitle = document.querySelector('.modaltitle');
 const ModalTechnology = document.querySelector('.language_used_modal');
@@ -142,3 +144,45 @@ const CloseModal = () => {
   document.querySelector('main').style.display = 'block';
   document.querySelector('header').style.display = 'flex';
 };
+
+// const myWorkCards = () => {
+// Portfolio.innerHTML = '';
+for (let i = 0; i < arrWork.length; i++) {
+  let languages = '';
+  arrWork[i].technologies.forEach((language) => {
+    languages += `
+        <li id='lang'>${language}</li>
+      `;
+    Portfolio[i].innerHTML = `
+        <a href="#">
+            <img class="img-container" src=${arrWork[i].img} alt="project-image1" />
+          </a>
+        <div class="content">
+          <div class="project_name">
+            <h3 id="title">${arrWork[i].title}</h3>
+          </div>
+          <div class="project_info">
+            <div class="company">
+              <p>${arrWork[i].company}</p>
+            </div>
+            <ul class="ul">
+              <li class="role">${arrWork[i].role}</li>
+              <li class="year">${arrWork[i].year}</li>
+          </ul>
+          </div>
+          <div class="description">
+            <p>
+              ${arrWork[i].desc}
+            </p>
+          </div>
+          <ul class="languages">
+            ${languages}
+          </ul>
+          <button type="button" class="button-container" onclick='openPop(${arrWork[i]?.id})'>
+            See Project
+          </button>
+        </div>
+      `;
+  });
+}
+// };

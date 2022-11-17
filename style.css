@@ -190,7 +190,7 @@ img {
   gap: 88px;
 }
 
-.card1 {
+#card1 {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 16px;
@@ -199,7 +199,7 @@ img {
   flex-direction: column;
 }
 
-.card2 {
+#card2 {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 16px;
@@ -208,7 +208,7 @@ img {
   flex-direction: column;
 }
 
-.card3 {
+#card3 {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 16px;
@@ -217,7 +217,7 @@ img {
   flex-direction: column;
 }
 
-.card4 {
+#card4 {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 16px;
@@ -308,11 +308,13 @@ img {
 }
 
 .description {
-  width: 90%;
+  width: 100%;
   margin-top: 10px;
 }
 
 .description p {
+  height: 6rem;
+  overflow: hidden;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -330,6 +332,7 @@ img {
 
 #lang {
   background: #ebebff;
+  overflow: hidden;
   border-radius: 8px;
   padding: 4px 12px;
   font-weight: 500;
@@ -724,13 +727,14 @@ form button:hover {
     gap: 142px;
   }
 
-  .card1 {
+  #card1 {
     display: flex;
     flex-direction: row;
     gap: 46px;
+    transform: translate(-50% -50%);
   }
 
-  .card1:hover {
+  #card1:hover {
     box-shadow: 1px 8px 16px rgba(5, 10, 49, 0.24);
     color: #fff;
     padding: 20px;
@@ -740,7 +744,7 @@ form button:hover {
     transition: all 0.5s ease-out;
   }
 
-  .card2 {
+  #card2 {
     padding: 24px;
     display: flex;
     flex-direction: row-reverse;
@@ -748,7 +752,7 @@ form button:hover {
     gap: 46px;
   }
 
-  .card2:hover {
+  #card2:hover {
     box-shadow: 1px 8px 16px rgba(5, 10, 49, 0.24);
     color: #fff;
     padding: 20px;
@@ -758,7 +762,7 @@ form button:hover {
     transition: all 0.5s ease-out;
   }
 
-  .card3 {
+  #card3 {
     border-radius: 24px;
     padding: 24px;
     display: flex;
@@ -766,7 +770,7 @@ form button:hover {
     gap: 46px;
   }
 
-  .card3:hover {
+  #card3:hover {
     box-shadow: 1px 8px 16px rgba(5, 10, 49, 0.24);
     color: #fff;
     padding: 20px;
@@ -776,7 +780,7 @@ form button:hover {
     transition: all 0.5s ease-out;
   }
 
-  .card4 {
+  #card4 {
     border-radius: 24px;
     padding: 24px;
     display: flex;
@@ -785,7 +789,7 @@ form button:hover {
     gap: 46px;
   }
 
-  .card4:hover {
+  #card4:hover {
     box-shadow: 1px 8px 16px rgba(5, 10, 49, 0.24);
     color: #fff;
     padding: 20px;
@@ -793,10 +797,25 @@ form button:hover {
     border-radius: 3px;
     cursor: pointer;
     transition: all 0.5s ease-out;
+  }
+
+  .description {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .description p {
+    height: 6rem;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
   }
 
   .img-container {
-    height: 400px;
+    height: 350px;
+    width: 300px;
   }
 
   .button-container {
