@@ -4,6 +4,7 @@ const humburgerBtn = document.querySelector('.humburger');
 const navMenu = document.querySelector('.nav-menue');
 const Portfolio = document.querySelectorAll('.card');
 const Modal = document.querySelector('.modal-container');
+const form = document.querySelector('#contactme');
 
 humburgerBtn.addEventListener('click', () => {
   humburgerBtn.classList.toggle('active');
@@ -192,4 +193,20 @@ for (let i = 0; i < arrWork.length; i++) {
         </div>
       `;
   });
+}
+
+function validate() {
+  const emailVal = document.getElementById('email').value;
+  const regx = /^([a-z\d-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
+  // eslint-disable-next-line func-names
+  document.forms[0].onsubmit = function (e) {
+    if (regx.test(emailVal)) {
+      document.querySelector('small').innerHTML = 'Valid';
+      document.querySelector('small').style.color = 'green';
+    } else {
+      document.querySelector('small').innerHTML = 'Invalid! Please enter the email in lower case';
+      document.querySelector('small').style.color = 'red';
+      e.preventDefault();
+    }
+  };
 }
