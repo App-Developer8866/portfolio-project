@@ -203,10 +203,6 @@ function validate() {
     if (regx.test(emailVal)) {
       document.querySelector('small').innerHTML = 'Valid';
       document.querySelector('small').style.color = 'green';
-    } else {
-      document.querySelector('small').innerHTML = 'Invalid! Please enter the email in lower case';
-      document.querySelector('small').style.color = 'red';
-      e.preventDefault();
     }
   };
 }
