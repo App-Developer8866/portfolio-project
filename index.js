@@ -4,15 +4,6 @@ const humburgerBtn = document.querySelector('.humburger');
 const navMenu = document.querySelector('.nav-menue');
 const Portfolio = document.querySelectorAll('.card');
 const Modal = document.querySelector('.modal-container');
-const ModalTitle = document.querySelector('.modaltitle');
-const ModalTechnology = document.querySelector('.language_used_modal');
-const ModalImage = document.querySelector('.popup-image');
-const ModalDescription = document.querySelector('.pop-up-description');
-const ModalSeeLive = document.querySelector('.seelive');
-const ModalSeeSource = document.querySelector('.seesource');
-const Company = document.querySelector('.pop-company');
-const Role = document.querySelector('.pop-role');
-const Year = document.querySelector('.pop-year');
 
 humburgerBtn.addEventListener('click', () => {
   humburgerBtn.classList.toggle('active');
@@ -127,15 +118,34 @@ const openPop = (id) => {
         <li>${language}</li>
       `;
   });
-  ModalTitle.innerHTML = getDetail[0].title;
-  Company.innerHTML = getDetail[0].company;
-  Role.innerHTML = getDetail[0].role;
-  Year.innerHTML = getDetail[0].year;
-  ModalImage.src = getDetail[0].img;
-  ModalTechnology.innerHTML = modaltechnology;
-  ModalDescription.innerHTML = getDetail[0].desc;
-  ModalSeeLive.setAttribute('href', getDetail[0].linkToLive);
-  ModalSeeSource.setAttribute('href', getDetail[0].linkToSource);
+  Modal.innerHTML = `
+  <div class="modalbox">
+    <div class="pop-top">
+      <div class="top-title">
+        <h3 class="modaltitle">${getDetail[0].title}</h3>
+        <img onclick="CloseModal()" class="close-modal" src="images/close.jpg" alt="closebutton">
+    </div>
+    <div class="project_info">
+        <p class="pop-company">${getDetail[0].company}</p>
+      <ul class="ul">
+        <li class="pop-role">${getDetail[0].role}</li>
+        <li class="pop-year">${getDetail[0].year}</li>
+    </ul>
+    </div>
+  </div>
+    <img class="popup-image" src='${getDetail[0].img}' alt="Project Popup Image">
+    <div class="below-box">
+    <p class="pop-up-description">${getDetail[0].desc}</p>
+    <div class="sec-box">
+      <ul class="language_used_modal">${modaltechnology}</ul>
+    <div class="modal-button-div">  
+  <a href='${getDetail[0].linkToLive}' class="seelive"><button type="button">See live <img class="button-image" src="images/export.svg" alt="live"> </button></a>    
+  <a href='${getDetail[0].linkToSource}' class="seesource"><button type="button">See source  <img class="button-image" src="images/github.png" alt="github"></button></a>  
+    </div>
+    </div>
+  </div>
+  </div>
+  `;
   Modal.style.display = 'block';
 };
 
@@ -145,8 +155,6 @@ const CloseModal = () => {
   document.querySelector('header').style.display = 'flex';
 };
 
-// const myWorkCards = () => {
-// Portfolio.innerHTML = '';
 for (let i = 0; i < arrWork.length; i++) {
   let languages = '';
   arrWork[i].technologies.forEach((language) => {
@@ -185,4 +193,3 @@ for (let i = 0; i < arrWork.length; i++) {
       `;
   });
 }
-// };
