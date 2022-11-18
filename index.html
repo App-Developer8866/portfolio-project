@@ -158,11 +158,12 @@
           If you have an application you are interested in developing, a feature that you need 
           built or a project that needs coding. I’d love to help with it 
         </p>
-    <form action="https://formspree.io/f/xnqropnd" method="POST">
-      <input type="text" name='name' maxlength="30" placeholder="Enter your name" required/>
-      <input type="email" name="email" placeholder="Enter your email" required/>
+    <form action="https://formspree.io/f/xnqropnd" method="POST" id="contactme">
+      <input type="text" id="name" name='name' maxlength="30" placeholder="Enter your name" required/>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required/>
+      <small></small>
       <textarea name="message" maxlength="500" placeholder="Type your message here" required></textarea>
-      <button type="submit">Get in touch</button>
+      <button type="submit" onclick="validate()">Get in touch</button>
     </form>
     <hr class="contact-hr">
   </section>
