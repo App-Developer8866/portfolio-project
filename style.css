@@ -190,7 +190,7 @@ img {
   gap: 88px;
 }
 
-.card1 {
+#card1 {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 16px;
@@ -199,7 +199,7 @@ img {
   flex-direction: column;
 }
 
-.card2 {
+#card2 {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 16px;
@@ -208,7 +208,7 @@ img {
   flex-direction: column;
 }
 
-.card3 {
+#card3 {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 16px;
@@ -217,7 +217,7 @@ img {
   flex-direction: column;
 }
 
-.card4 {
+#card4 {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 16px;
@@ -237,11 +237,19 @@ img {
   line-height: 44px;
 }
 
+.modaltitle {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
 .project_info {
   display: flex;
   gap: 5px;
   align-items: center;
-  margin-top: 10px;
+
+  /* margin-top: 10px; */
 }
 
 .ul {
@@ -249,6 +257,14 @@ img {
 }
 
 .company p {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+  text-transform: uppercase;
+}
+
+.pop-company {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
@@ -269,6 +285,14 @@ img {
   margin-right: 30px;
 }
 
+.pop-role {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+  margin-right: 30px;
+}
+
 .year {
   font-weight: 600;
   font-size: 13px;
@@ -276,12 +300,21 @@ img {
   color: #7a869a;
 }
 
+.pop-year {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
 .description {
-  width: 90%;
+  width: 100%;
   margin-top: 10px;
 }
 
 .description p {
+  height: 6rem;
+  overflow: hidden;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -299,6 +332,7 @@ img {
 
 #lang {
   background: #ebebff;
+  overflow: hidden;
   border-radius: 8px;
   padding: 4px 12px;
   font-weight: 500;
@@ -489,6 +523,18 @@ form button {
   border-radius: 8px;
 }
 
+.modalbox button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #6070ff;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background: transparent;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
 form button:hover {
   background: #661d79;
   box-shadow: 1px 8px 16px rgba(64, 83, 252, 0.24);
@@ -503,6 +549,89 @@ form button:hover {
   border-radius: 10px;
   width: 134px;
   height: 5px;
+}
+
+.modal-container {
+  margin: 0;
+  background: #c1c7d0;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  display: none;
+}
+
+.modalbox {
+  background-color: white;
+  padding: 24px;
+  border-radius: 16px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5% 5%;
+}
+
+.pop-top {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-button-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.modalbox button:hover {
+  background-color: #661d79;
+  color: white;
+}
+
+.sec-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-modal {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+
+.language_used_modal {
+  margin: 20px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.language_used_modal li {
+  color: #396df2;
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  list-style: none;
+  text-align: center;
+  margin: 10px;
+}
+
+.popup-image {
+  max-width: 100%;
+}
+
+.button-image {
+  width: 20px;
 }
 
 @media (min-width: 768px) {
@@ -555,6 +684,15 @@ form button:hover {
     transition: all 0.5s ease-out;
   }
 
+  .description p {
+    height: 6rem;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+  }
+
   .section .info p {
     animation-duration: 5s;
     animation-name: slidein;
@@ -604,13 +742,13 @@ form button:hover {
     gap: 142px;
   }
 
-  .card1 {
+  #card1 {
     display: flex;
     flex-direction: row;
     gap: 46px;
   }
 
-  .card1:hover {
+  #card1:hover {
     box-shadow: 1px 8px 16px rgba(5, 10, 49, 0.24);
     color: #fff;
     padding: 20px;
@@ -620,7 +758,7 @@ form button:hover {
     transition: all 0.5s ease-out;
   }
 
-  .card2 {
+  #card2 {
     padding: 24px;
     display: flex;
     flex-direction: row-reverse;
@@ -628,7 +766,7 @@ form button:hover {
     gap: 46px;
   }
 
-  .card2:hover {
+  #card2:hover {
     box-shadow: 1px 8px 16px rgba(5, 10, 49, 0.24);
     color: #fff;
     padding: 20px;
@@ -638,7 +776,7 @@ form button:hover {
     transition: all 0.5s ease-out;
   }
 
-  .card3 {
+  #card3 {
     border-radius: 24px;
     padding: 24px;
     display: flex;
@@ -646,7 +784,7 @@ form button:hover {
     gap: 46px;
   }
 
-  .card3:hover {
+  #card3:hover {
     box-shadow: 1px 8px 16px rgba(5, 10, 49, 0.24);
     color: #fff;
     padding: 20px;
@@ -656,7 +794,7 @@ form button:hover {
     transition: all 0.5s ease-out;
   }
 
-  .card4 {
+  #card4 {
     border-radius: 24px;
     padding: 24px;
     display: flex;
@@ -665,7 +803,7 @@ form button:hover {
     gap: 46px;
   }
 
-  .card4:hover {
+  #card4:hover {
     box-shadow: 1px 8px 16px rgba(5, 10, 49, 0.24);
     color: #fff;
     padding: 20px;
@@ -673,10 +811,16 @@ form button:hover {
     border-radius: 3px;
     cursor: pointer;
     transition: all 0.5s ease-out;
+  }
+
+  .description {
+    width: 100%;
+    margin-top: 10px;
   }
 
   .img-container {
-    height: 400px;
+    height: 350px;
+    width: 300px;
   }
 
   .button-container {
@@ -785,5 +929,53 @@ form button:hover {
 
   .contact-hr {
     display: none;
+  }
+
+  .modal-container {
+    margin: 0;
+  }
+
+  .modalbox {
+    height: auto;
+    padding: 24px;
+    width: 75vw;
+    margin: 5% auto;
+  }
+
+  .modalbox .popup-image {
+    width: 100%;
+  }
+
+  .modalbox h3 {
+    width: 60vw;
+    font-size: 60px;
+  }
+
+  .modalbox a button {
+    font-size: 18px;
+    justify-content: center;
+  }
+
+  .language_used_modal {
+    margin: 40px 0;
+  }
+
+  .below-box {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .pop-up-description {
+    width: 70%;
+    padding: 30px 0;
+  }
+
+  .sec-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 30%;
   }
 }
