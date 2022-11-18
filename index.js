@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 /* eslint-disable no-plusplus */
 /* eslint-disable no-unused-vars */
 const humburgerBtn = document.querySelector('.humburger');
@@ -5,6 +6,9 @@ const navMenu = document.querySelector('.nav-menue');
 const Portfolio = document.querySelectorAll('.card');
 const Modal = document.querySelector('.modal-container');
 const form = document.querySelector('#contactme');
+const userName = document.getElementById('name');
+const Email = document.getElementById('email');
+const Msg = document.getElementById('message');
 
 humburgerBtn.addEventListener('click', () => {
   humburgerBtn.classList.toggle('active');
@@ -210,3 +214,12 @@ function validate() {
     }
   };
 }
+
+form.addEventListener('input', () => {
+  const contactData = {
+    username: userName.value,
+    email: Email.value,
+    message: Msg.value,
+  };
+  localStorage.setItem('contact', JSON.stringify(contactData));
+});
