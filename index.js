@@ -223,3 +223,8 @@ form.addEventListener('input', () => {
   };
   localStorage.setItem('contact', JSON.stringify(contactData));
 });
+
+const getLocalStorageData = JSON.parse(localStorage.getItem('contact'));
+userName.value = getLocalStorageData.username;
+Email.value = getLocalStorageData.email;
+Msg.value = getLocalStorageData.message;
